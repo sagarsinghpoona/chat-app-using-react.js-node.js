@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server,{
     cors:{
-        origin:"https://poonachat-frontend.vercel.app/",
+        origin:"https://poonachat-frontend.vercel.app",
 
         methods:["Get","Put"]
 
@@ -38,7 +38,7 @@ io.on("connection",(socket)=>{console.log(socket.id)
 
 app.use(cors());
 
-server.listen('https://poonachat.vercel.app',()=>{
+server.listen("https://poonachat.vercel.app",()=>{
     console.log("server is running on port 1000")
 })
 
