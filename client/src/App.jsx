@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import io from "socket.io-client"
 import Chat from "./Components/Chat"
-const socket = io.connect("https://poonachat.vercel.app/")
+const socket = io.connect("https://poonachat.vercel.app")
 import music from './mixkit-tile-game-reveal-960.wav'
 
 const App = () => {
