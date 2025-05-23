@@ -38,7 +38,7 @@ io.on("connection",(socket)=>{console.log(socket.id)
 
 app.use(cors());
 
-server.listen('https://poonachat.vercel.app/',()=>{
+server.listen('https://poonachat.vercel.app',()=>{
     console.log("server is running on port 1000")
 })
 
